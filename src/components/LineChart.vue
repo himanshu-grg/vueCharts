@@ -54,23 +54,23 @@
     },
     mounted () {
       this.renderChart(this.datacollection, this.options)
-      fetch('https://covid19.mathdro.id/api/confirmed')
-        .then(
-          function(response) {
-            if (response.status !== 200) {
-              // eslint-disable-next-line
-              console.log('Looks like there was a problem. Status Code: ' +
-                response.status);
-              return;
-            }
-        // Examine the text in the response
-        response.json().then(function(data) {
-              let dat = data.slice(0, 7);
-              // eslint-disable-next-line
-              console.log(dat);
-            });
-          }
-        )
+      // fetch('https://covid19.mathdro.id/api/confirmed')
+      //   .then(
+      //     function(response) {
+      //       if (response.status !== 200) {
+      //         // eslint-disable-next-line
+      //         console.log('Looks like there was a problem. Status Code: ' +
+      //           response.status);
+      //         return;
+      //       }
+      //   // Examine the text in the response
+      //   response.json().then(function(data) {
+      //         let dat = data.slice(0, 7);
+      //         // eslint-disable-next-line
+      //         console.log(dat);
+      //       });
+      //     }
+      //   )
     }
   }
 </script>
